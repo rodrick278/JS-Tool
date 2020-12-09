@@ -2,9 +2,9 @@
  * @Descripttion: 
  * @version: 
  * @Author: rodrick
- * @Date: 2020-12-08 23:17:25
+ * @Date: 2020-12-09 13:51:40
  * @LastEditors: rodrick
- * @LastEditTime: 2020-12-08 23:19:00
+ * @LastEditTime: 2020-12-09 13:56:24
  */
 let thumb = document.querySelector(".thumb");
 
@@ -29,6 +29,7 @@ thumb.onmousedown = function (e) {
     }
     // 给子元素赋值位置left
     thumb.style.left = leftVal + "px";
+    num.textContent = (leftVal/(slider.offsetWidth-thumb.offsetWidth)*100).toFixed(2)+'%'
   }
 
   function mouseup() {

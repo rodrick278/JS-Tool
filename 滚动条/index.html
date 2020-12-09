@@ -28,7 +28,7 @@
  * @Author: rodrick
  * @Date: 2020-12-08 23:16:33
  * @LastEditors: rodrick
- * @LastEditTime: 2020-12-08 23:19:42
+ * @LastEditTime: 2020-12-09 13:56:17
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -56,6 +56,14 @@
       background: blue;
       cursor: pointer;
     }
+
+    #num {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
   </style>
 </head>
 
@@ -63,6 +71,7 @@
   <div id="slider" class="slider">
     <div class="thumb"></div>
   </div>
+  <div id="num">拖动显示百分比</div>
   <script type="text/javascript" src="./index.js"></script>
 </body>
 
