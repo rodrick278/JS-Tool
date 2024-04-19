@@ -1,0 +1,21 @@
+// 使用的sass文件内导入此文件
+// e.g
+// .classname {
+//   @include webpbg($bg);
+// }
+
+
+@mixin webpbg($url) {
+  .webpSup & {
+    background-image: url("#{$url}\_.webp");
+  }
+
+  .webpNotSup & {
+    background-image: url($url);
+  }
+
+  // 当前元素如果拥有webpNotUse类，则不使用webp
+  &.webpNotUse {
+    background-image: url($url);
+  }
+}
